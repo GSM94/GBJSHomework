@@ -1,5 +1,4 @@
-
-"use strict";
+'use strict';
 
 /*
 Необходимо попросить пользователя ввести три числа.
@@ -12,11 +11,12 @@
 */
 
 const enterNumber = function () {
-  const userNumber1 = +prompt("Enter first number");
-  const userNumber2 = +prompt("Enter second number");
-  const userNumber3 = +prompt("Enter third number");
+  const userNumber1 = +prompt('Enter first number');
+  const userNumber2 = +prompt('Enter second number');
+  const userNumber3 = +prompt('Enter third number');
   return [userNumber1, userNumber2, userNumber3];
 };
+
 
 // 1. if() statement
 // const maxValue = function (...[nums]) {
@@ -48,16 +48,14 @@ const enterNumber = function () {
 
 // 2. with DOM
 const maxNumberWithArray = function () {
-  const nums = (enterNumber());
+  const nums = enterNumber();
   let max = nums[0];
   for (let i = 0; i < nums.length; i++) {
-  if (nums[i] > nums[0]) {
-    max = nums[i];
+    if (nums[i] > nums[0]) {
+      max = nums[i];
+    }
   }
-  }
-  alert(
-    `Максимальное значение среди чисел ${nums.join(', ')} равно ${max}.`
-  );
+  alert(`Максимальное значение среди чисел ${nums.join(', ')} равно ${max}.`);
   console.log(
     `Максимальное значение среди чисел ${nums.join(', ')} равно ${max}.`
   );
@@ -65,4 +63,5 @@ const maxNumberWithArray = function () {
 
 // maxNumberWithArray();
 
-document.querySelector("#max").addEventListener("click", maxNumberWithArray);
+document.querySelector('#max').addEventListener('click', maxNumberWithArray);
+// так же можно возпользоваться с Math.max(...arr)
