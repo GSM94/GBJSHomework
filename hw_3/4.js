@@ -39,11 +39,9 @@ const difference = function () {
   let dif = 0;
   if (num1 > num2) {
     dif = num1 - num2;
-  } else if (num1 < num2) {
-    dif = num2 - num1;
   } else {
-    dif;
-  }
+    dif = num2 - num1;
+  } 
   if (!Number.isFinite(num1) && !Number.isFinite(num1)) {
     alert("Please, enter type number!");
     console.log("Please, enter type number!");

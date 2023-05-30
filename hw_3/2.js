@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 Необходимо попросить пользователя ввести число.
@@ -19,14 +19,18 @@
 // userSalary(+prompt('Enter your salary'));
 // Здесь пишем решение, данный комментарий необходимо стереть.
 
-const userSalary = function() {
+const userSalary = function () {
   const salary = +prompt('Enter your salary');
-  if(Number.isFinite(salary)) {
-    alert(`Размер заработной платы за вычетом налогов равен: ${salary*0.87}.`);
-    console.log(`Размер заработной платы за вычетом налогов равен: ${salary*0.87}.`);
+  if (Number.isFinite(salary)) {
+    alert(
+      `Размер заработной платы за вычетом налогов равен: ${salary * 0.87}.`
+    );
+    console.log(
+      `Размер заработной платы за вычетом налогов равен: ${salary * 0.87}.`
+    );
   } else {
-    alert("Значение задано неверно.");
-    console.log("Значение задано неверно.");
+    alert('Значение задано неверно.');
+    console.log('Значение задано неверно.');
   }
-}
-document.querySelector("#salary").addEventListener("click", userSalary);
+};
+document.querySelector('#salary').addEventListener('click', userSalary);

@@ -14,10 +14,10 @@
 
 // 2. with DOM
 
-const getCube = function() {
+const makeCube = function() {
   const cube = prompt('Enter number')
   alert(`Cube of number ${cube} is ${Math.pow(cube, 3)}`);
   console.log(`Cube of number ${cube} is ${Math.pow(cube, 3)}`);
 }
-document.querySelector("#cube").addEventListener("click", getCube);
+document.querySelector("#cube").addEventListener("click", makeCube);
 // Здесь пишем решение, данный комментарий необходимо стереть.
