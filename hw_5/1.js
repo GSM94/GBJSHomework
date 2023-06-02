@@ -2,7 +2,7 @@
 Дан объект numbers. 
 Необходимо в консоль вывести все значения объекта, которые больше или равны 3.
 */
-const message = 'Homework 4';
+const message = 'Homework 5';
 console.log(message.padStart(50, '-').padEnd(100, '-'));
 console.log('');
 console.log('1. Задание');
