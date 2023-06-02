@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя
@@ -7,8 +7,8 @@
 выполнения метода forEach. Не нужно создавать новый массив.
 Если сложно работать с методами массива, то можно сделать и обычным циклом.
 */
-console.log("");
-console.log("3. Задание");
+console.log('');
+console.log('3. Задание');
 const products = [
   {
     id: 3,
@@ -24,8 +24,7 @@ const products = [
   },
 ];
 
-products.forEach(function(product) {
-  product.price =  product.price * 0.87
-})
+products.forEach(function (product) {
+  product.price = product.price * 0.87;
+});
 console.log(products);
-// Здесь пишем решение, данный комментарий необходимо стереть.

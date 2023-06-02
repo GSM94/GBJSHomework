@@ -40,5 +40,3 @@ console.log(img);
 
 products1.sort((a, b) => a.price - b.price);
 console.log(products1);
-
-// Здесь пишем решение, данный комментарий необходимо стереть.
