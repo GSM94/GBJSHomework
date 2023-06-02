@@ -33,9 +33,7 @@ const products1 = [
   },
 ];
 
-const img = products1.filter(function (img) {
-  return img?.photos;
-});
+const img = products1.filter((img)=>img.photos?.length > 0);
 console.log(img);
 
 products1.sort((a, b) => a.price - b.price);
