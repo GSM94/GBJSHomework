@@ -39,7 +39,7 @@ dropdown.insertAdjacentHTML('afterend', '<a href="#">link</a>');
 /*
 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
 */
-document.querySelector('#dropdownMenuButton').id = 'superDropdown' ;
+document.querySelector('#dropdownMenuButton').id = 'superDropdown';
 
 /*
 6. Добавьте атрибут data-dd со значением 3 элементу у которого существует
@@ -50,4 +50,4 @@ document.querySelector('[aria-labelledby="dropdownMenuButton"]').dataset.dd = 3;
 /*
 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
 */
-document.querySelector('.dropdown-toggle').removeAttribute('type')
+document.querySelector('.dropdown-toggle').removeAttribute('type');
